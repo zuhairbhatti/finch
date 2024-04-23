@@ -41,7 +41,9 @@ These instructions will get you a copy of the project up and running on your loc
     
     bashCopy code
     
-    `cd client npm run start`
+    `cd client`
+    
+    `npm run start`
     
     This will start the React app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
     
@@ -49,7 +51,9 @@ These instructions will get you a copy of the project up and running on your loc
     
     bashCopy code
     
-    `cd ../server npm run backend`
+    `cd ../server`
+    
+    `npm run backend`
     
     This will start the Node.js server. By default, it will run on http://localhost:8000.
     
