@@ -15,21 +15,15 @@ These instructions will get you a copy of the project up and running on your loc
 ### Installing
 
 1.  Clone the repository to your local machine:
-    
-    bashCopy code
-    
+        
     `git clone https://github.com/zuhairbhatti/finch.git`
     
 2.  Navigate into the project directory:
-    
-    bashCopy code
-    
+        
     `cd finch`
     
 3.  Install dependencies for both the client and server:
-    
-    bashCopy code
-    
+        
     `cd client npm install`
 
     `cd ../backend npm install`
