@@ -30,7 +30,9 @@ These instructions will get you a copy of the project up and running on your loc
     
     bashCopy code
     
-    `cd client npm install  cd ../backend npm install`
+    `cd client npm install`
+
+    `cd ../backend npm install`
     
 
 ### Running the Development Servers
@@ -43,7 +45,7 @@ These instructions will get you a copy of the project up and running on your loc
     
     This will start the React app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
     
-2.  Start the Node.js development server:
+2.  Start the Node.js development server, may be easier to do in a split terminal:
     
     bashCopy code
     
