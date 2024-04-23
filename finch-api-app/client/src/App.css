@@ -1,0 +1,91 @@
+Css for project
+
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body font and background */
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f7f7f7;
+  color: #484848;
+}
+
+/* Container */
+.data-page {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Select section */
+.select-section {
+  margin-bottom: 20px;
+}
+
+/* Select element */
+select, #submit-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #d8d8d8;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+/* Submit button */
+#submit-button {
+  margin-top: 10px;
+  background-color: #008489;
+  color: #fff;
+  cursor: pointer;
+}
+
+#submit-button:hover {
+  background-color: #005c5e;
+}
+
+/* Loading section */
+.loading-section {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Headings */
+h2, h3 {
+  margin-top: 20px;
+  color: #484848;
+}
+
+/* List styles */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+/* Option styling */
+option {
+  padding: 10px;
+}
+
+/* Hover and focus styles */
+select:focus, #submit-button:focus {
+  outline: none;
+  border-color: #66afe9;
+}
+
+select:hover, #submit-button:hover {
+  background-color: #f2f2f2;
+}
+
