@@ -57,8 +57,3 @@ Built With
 
 *   [React](https://reactjs.org/) - JavaScript library for building user interfaces.
 *   [Node.js](https://nodejs.org/) - JavaScript runtime built on Chrome's V8 JavaScript engine.
-
-Authors
--------
-
-*   [Zuhair Bhatti](https://github.com/zuhairbhatti) - Initial work
