@@ -59,7 +59,7 @@ export const DataPage: React.FC = () => {
           const companyData = await axios.get(`/employer/company`);
           setCompanyData(companyData.data);
         } catch (companyError) {
-          console.error("Error fetching company data:", companyError.response);
+          setError('Error fetching company data');
           setCompanyData([]); // Reset company data
         }
 
@@ -68,10 +68,7 @@ export const DataPage: React.FC = () => {
           const directoryData = await axios.get("/employer/directory");
           setDirectoryData(directoryData.data);
         } catch (directoryError) {
-          console.error(
-            "Error fetching directory data:",
-            directoryError.response,
-          );
+          setError('Error fetching directory data');
           setDirectoryData([]); // Reset directory data
           // Handle directory data error
         }
@@ -81,8 +78,7 @@ export const DataPage: React.FC = () => {
         console.error("Please select an option");
       }
     } catch (error) {
-      console.error("Error:", error.response);
-      setError(error.response.data.message);
+      setError('Error Fetching Data from the provider');
       setFetching(false);
     }
   };

@@ -4,7 +4,7 @@ interface CompanySectionProps {
   companyData: any;
 }
 
-const notAvailable = "N/A"; // Define 'N/A' as a constant
+const notAvailable = "N/A";
 
 export const CompanySection: React.FC<CompanySectionProps> = ({
   companyData,

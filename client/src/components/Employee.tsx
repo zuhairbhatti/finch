@@ -4,7 +4,7 @@ import UserDetails from "./Individual.tsx";
 import Employment from "./Employment.tsx";
 
 interface DropdownProps {
-  directoryData: any[]; // Replace 'any' with the actual type of directoryData
+  directoryData: any[];
 }
 
 interface IndividualData {
@@ -70,7 +70,6 @@ const EmploymentSection: React.FC<DropdownProps> = ({ directoryData }) => {
   const [individualData, setIndividualData] = useState<IndividualData>();
   const [employmentData, setEmploymentData] = useState<EmployeeData>();
   const [error, setError] = useState("");
-  // const [data, setData] = useState<any>();
 
   const handleOptionChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedEmployee(event.target.value);

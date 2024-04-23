@@ -9,13 +9,12 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use(bodyParser.json());
 
-// app.use('/api', require('./routes/api'));
-
 app.post('/sandbox/create', async (req, res) => {
     try {
-      // Extract request parameters from the request body
+      // Extract provider_id from the request body
       const { provider_id } = req.body;
       const products = ["company", "directory", "individual", "employment"]
+      
       // Validate the products array
       if (products.includes("payment") || products.includes("pay_statement")) {
         return res.status(400).json({ error: 'Invalid products array' });
@@ -42,7 +41,6 @@ app.post('/sandbox/create', async (req, res) => {
       // Extract response parameters from the external API response
       const { access_token, company_id } = response.data;
       process.env.ACCESS_TOKEN = access_token;
-      // Send the extracted response parameters back to the client
       res.sendStatus(200)
     } catch (error) {
       // Handle errors
@@ -114,10 +112,7 @@ app.post('/employer/individual', async (req, res) => {
         headers: {
             'Authorization': `Bearer ${access_token}`,
             'Content-Type': 'application/json',
-            'Finch-API-Version': '2020-09-17',
-            'Cache-Control': 'no-cache',
-            'Pragma': 'no-cache',
-            'Expires': '0'
+            'Finch-API-Version': '2020-09-17'
         }
       });
 
